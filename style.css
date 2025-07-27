@@ -1,0 +1,37 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #0c0c0c;
+    color: #7b3f00;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    color: #7b3f00;
+    font-size: 2rem;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .glow-image {
+    width: 700px;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+    transition: 0.4s ease-in-out;
+    animation: glow 2s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 10px #f9c14d, 0 0 20px #f9c14d;
+      transform: scale(1);
+    }
+    100% {
+      box-shadow: 0 0 25px #ff9900, 0 0 40px #ff9900;
+      transform: scale(1.05);
+    }
+  }
